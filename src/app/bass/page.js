@@ -10,7 +10,7 @@ export default function bassPage (){
                 <Image  style={{borderRadius:"12px"}}src={"/kidbass.png"} fill alt="10 year old josiah in the Church band"/>
             </div>
             <p className="bassBio" >
-                I started young—my dad was the lead musician at our church—so he put me in piano lessons at five. At eight, he handed me my first bass, a classic Ibanez GSR200. That's where I found my gospel foundation: James Hall, Hezekiah Walker, Fred Hammond, Kirk Franklin, T.D. Jakes, Chicago Mass Choir, and more.<br/><br/>
+                I started young—my dad was the lead musician at our church—so he put me in piano lessons at five. At eight, he handed me my first bass, a classic Ibanez GSR200. That&rsquo;s where I found my gospel foundation: James Hall, Hezekiah Walker, Fred Hammond, Kirk Franklin, T.D. Jakes, Chicago Mass Choir, and more.<br/><br/>
                 As I grew, R&B and soul pulled me in—Michael Jackson, Prince, The Gap Band, Alicia Keys, and especially Anderson .Paak—shaping a style built on a deep pocket, colorful harmony, and song-first instincts. Today I gig across New York and serve as the house bassist at Liberty Pentecostal, bringing tight groove and tasteful melody to every stage and session.
             </p>
         </div>
@@ -24,7 +24,7 @@ export default function bassPage (){
                 style={{ width:"clamp(270px, calc(-50px + 95vw ), 950px)",alignSelf:"center", height: "auto" , borderRadius: 12 }}
                 />
                 <h2 style={{width:"fit-content",alignSelf:"center",padding:"clamp(2rem,3rem + 1vw, 5rem)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
-                    Sage And The Crowe at Baby's Alright
+                    Sage And The Crowe at Baby&rsquo;s Alright
                 </h2>
                  <video
                 src="Dajah.mp4"
