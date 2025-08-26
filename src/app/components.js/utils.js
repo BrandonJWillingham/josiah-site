@@ -51,10 +51,10 @@ export default function Nav(){
                     Contact
                 </Link>
                 <div className="hide-on-mobile" style={{height:"fit-content",alignSelf:"center",display:"flex"}}>
-                    <a className="hide-on-mobile" style={{paddingRight:" clamp(5px, calc(-60px + 8.333vw), 60px)"}}>
+                    <a href="https://www.instagram.com/josiah.wb/" className="hide-on-mobile" style={{paddingRight:" clamp(5px, calc(-60px + 8.333vw), 60px)"}}>
                         <SiInstagram style={{alignSelf:"center"}} size={20} className="text-neutral-900" />
                     </a>
-                    <a className="hide-on-mobile"  style={{}}>
+                    <a href="https://www.tiktok.com/@josiahbwill" className="hide-on-mobile"  style={{}}>
                         <SiTiktok  href="https://www.tiktok.com/@josiahbwill"size={20} className="text-neutral-900" />
                     </a>
                 </div>
