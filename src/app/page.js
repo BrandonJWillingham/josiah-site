@@ -1,6 +1,5 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Nav, { ImageCard,bottomNav } from "./components.js/utils";
+import { ImageCard } from "./components.js/utils";
+import Link from "next/link";
 
 
 
@@ -8,8 +7,6 @@ export default function Home() {
 
   return (
     <>
-      {/* <Nav/> */}
-
       <div  className="no-scrollbar" style={{flexWrap: "nowrap",overflowX: "auto",overflowY:"hidden", width:"100%",gap: "30px", display:"flex", flexWrap: "nowrap", WebkitOverflowScrolling: "touch"}} >
         <ImageCard imgSrc={"/image1.jpg"} brand={"ONS"} alt={"campaign shot for ONS"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.30),400px)"} height={"clamp(400px,calc(400px + (100vw - 780px) * 0.17),513px)"} />
         <ImageCard imgSrc={"/MoonJuice.jpg"} brand={"Moon Juice"} alt={"Campaign for Moon Juice"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.30),400px)"}  height={"clamp(400px,calc(400px + (100vw - 780px) * 0.17),513px)"} />
@@ -39,7 +36,7 @@ export default function Home() {
 
       <div style={{display:"flex",justifyContent:"center"}}>
         <p style={{width:"clamp(400px, 400px + 27.8vw, 860px)",padding:"40px",fontSize:"clamp(1rem, .4rem + 1vw ,3rem)"}}>
-          Church-trained from age 8. Focus in R&B, Soul, and gospel—locked pocket with a warm tone.<br/> Get the full story on my <a href="/bass">music page</a>
+          Church-trained from age 8. Focus in R&B, Soul, and gospel—locked pocket with a warm tone.<br/> Get the full story on my <Link href="/bass">music page</Link>
         </p>
       </div>
     </>

@@ -5,6 +5,7 @@ import styles from "./ImageCard.module.css";
 import { SiInstagram, SiTiktok } from "react-icons/si";
 import { useEffect,useRef,useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Nav(){
   const [open, setOpen] = useState(false);
@@ -32,17 +33,17 @@ export default function Nav(){
         <div style={{display:"flex", flexDirection:"row",marginBottom: "50px",marginTop:"20px",justifyContent:"flex-end"}}>
           <div style={{width:"100%"}}>
             <h1 style={{width:"100%"}}>
-              <a href="/" style={{width:"100%",marginLeft:"10px",fontSize:"clamp(1.4rem, -1px + 7.5vw ,4rem)"}}>
+              <Link href="/" style={{width:"100%",marginLeft:"10px",fontSize:"clamp(1.4rem, -1px + 7.5vw ,4rem)"}}>
                 Josiah Willingham
-              </a>
+              </Link>
                 
             </h1>
           </div>
 
             <div className="desktopNav" style={{display:"flex", flexDirection:"row",}}>
-                <a href="/fashion" className="hide-on-mobile" style={{alignSelf:"center",height:"fit-content",paddingRight:"clamp(20px, calc(-27.3px + 6.06vw), 60px)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
+                <Link href="/fashion" className="hide-on-mobile" style={{alignSelf:"center",height:"fit-content",paddingRight:"clamp(20px, calc(-27.3px + 6.06vw), 60px)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
                     Fashion
-                </a>
+                </Link>
                 <a href="/bass" className="hide-on-mobile"style={{alignSelf:"center",height:"fit-content",paddingRight:"clamp(20px, calc(-27.3px + 6.06vw), 60px)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
                     Bass
                 </a>
@@ -71,15 +72,15 @@ export default function Nav(){
         </div>
 
           <div className="mobileNav" data-open={open} style={{display:"flex",flexDirection:"column",justifyContent:"center"}}>
-            <a href="/fashion" className="tab">
+            <Link href="/fashion" className="tab">
               Fashion
-            </a>
-            <a href="/bass" className="tab">
+            </Link>
+            <Link href="/bass" className="tab">
               Bass
-            </a>
-            <a href="/contact" className="tab">
+            </Link>
+            <Link href="/contact" className="tab">
               Contact
-            </a>
+            </Link>
             <div style={{display:"flex",justifyContent:"center",padding:"20px"}}>
               <a href="https://www.instagram.com/josiah.wb/">
                 <SiInstagram style={{marginRight:"10px"}} size={20} className="text-neutral-900" />
