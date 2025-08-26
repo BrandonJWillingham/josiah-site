@@ -32,12 +32,6 @@ h1,h2,.display {
   width: 100%;             /* card fills column width */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 html,
 body {

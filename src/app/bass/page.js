@@ -19,7 +19,9 @@ export default function bassPage (){
             <div style={{display:"flex",justifyContent:"center",flexDirection:"column"}}>
                 <video
                 src="SageandCrowe.mp4"
-                 controls
+                controls
+                playsInline     // REQUIRED on iOS to avoid full-screen
+                muted  
                 preload="metadata"
                 style={{ width:"clamp(270px, calc(-50px + 95vw ), 950px)",alignSelf:"center", height: "auto" , borderRadius: 12 }}
                 />
@@ -28,7 +30,9 @@ export default function bassPage (){
                 </h2>
                  <video
                 src="Dajah.mp4"
-                 controls
+                controls
+                playsInline     // REQUIRED on iOS to avoid full-screen
+                muted 
                 preload="metadata"
                 style={{ width:"clamp(270px, calc(-50px + 95vw ), 950px)",alignSelf:"center", height: "auto" , borderRadius: 12 }}
                 />
@@ -43,30 +47,40 @@ export default function bassPage (){
                 className="reel"
                 src="SaxLick.mp4"
                 controls
+                playsInline     // REQUIRED on iOS to avoid full-screen
+                muted 
                 preload="metadata"
             />
             <video
                 className="reel"
                 src="WinnersCircle.mp4"
                 controls
+                playsInline     // REQUIRED on iOS to avoid full-screen
+                muted 
                 preload="metadata"
             />
             <video
                 className="reel"
                 src="wonderfulWorld.mp4"
                 controls
+                playsInline     // REQUIRED on iOS to avoid full-screen
+                muted 
                 preload="metadata"
             />
             <video
                 className="reel"
-                src="Overflow.mp4"
+                src="overflow.mp4"
                 controls
+                playsInline     // REQUIRED on iOS to avoid full-screen
+                muted 
                 preload="metadata"
             />
             <video
                 className="reel"
                 src="throughTheWire.mp4"
                 controls
+                playsInline     // REQUIRED on iOS to avoid full-screen
+                muted 
                 preload="metadata"
             />
         </div>

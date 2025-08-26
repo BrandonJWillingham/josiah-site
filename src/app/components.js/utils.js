@@ -117,7 +117,7 @@ export function ImageCard({
         alt={computedAlt}
         fill
         className={styles.img}
-        priority={false}
+        priority={true}
       
       />
       <div className={styles.overlay} />
