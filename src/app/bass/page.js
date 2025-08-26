@@ -27,7 +27,7 @@ export default function bassPage (){
                     Sage And The Crowe at Baby's Alright
                 </h2>
                  <video
-                src="Dajah.MOV"
+                src="Dajah.mp4"
                  controls
                 preload="metadata"
                 style={{ width:"clamp(270px, calc(-50px + 95vw ), 950px)",alignSelf:"center", height: "auto" , borderRadius: 12 }}
