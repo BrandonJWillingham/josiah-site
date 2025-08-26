@@ -1,38 +1,34 @@
-export const runtime = 'edge';
-import nodemailer from "nodemailer";
-
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,           // smtp.gmail.com
-  port: Number(process.env.SMTP_PORT),   // 465
-  secure: process.env.SMTP_SECURE === "true", // true for 465
-  auth: {
-    user: process.env.SMTP_USER,         // your Gmail address
-    pass: process.env.SMTP_PASS,         // App Password
-  },
-});
+export const runtime = 'nodejs'; // or just omit this line
 
 export async function POST(req) {
   try {
-    const { name = "", email = "", message = "", company = "" } = await req.json();
-
-    // Honeypot anti-spam: ignore if hidden field filled
-    if (company) return new Response("OK", { status: 200 });
-
-    if (!email || !message) {
-      return new Response("Missing fields", { status: 400 });
+    const { name, email, message } = await req.json();
+    if (!name || !email || !message) {
+      return Response.json({ error: 'Missing fields' }, { status: 400 });
     }
 
+    const nodemailer = await import('nodemailer'); // dynamic import
+    const transporter = nodemailer.createTransport({
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT || 465),
+      secure: true, // true for 465, false for 587
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASS,
+      },
+    });
+
     await transporter.sendMail({
-      from: `"Website" <${process.env.FROM_EMAIL}>`,
-      to: process.env.TO_EMAIL,
-      replyTo: email,                          // visitor’s email
-      subject: `New message from ${name || "your website"}`,
-      text: `From: ${name} <${email}>\n\n${message}`,
+      from: process.env.SMTP_FROM || process.env.SMTP_USER,
+      to: process.env.CONTACT_TO || process.env.SMTP_USER,
+      replyTo: email,
+      subject: `New message from ${name}`,
+      text: message,
     });
 
     return Response.json({ ok: true });
   } catch (err) {
-    console.error("Mail error:", err);
-    return new Response("Email send error", { status: 500 });
+    console.error(err);
+    return Response.json({ error: 'Send failed' }, { status: 500 });
   }
 }
