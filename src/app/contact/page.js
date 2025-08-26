@@ -9,7 +9,7 @@ export default function contact(){
                 <p style={{marginBottom:"10px"}}>
                     New York
                 </p>
-                <a style={{paddingLeft:"clamp(5px, calc(-361.364px + 46.9697vw), 215px)"}} href="mailto:oly@stormmanagement-la.com?subject=Inquiry%20from%20Josiah's%20site">
+                <a style={{paddingLeft:"clamp(5px, calc(-361.364px + 46.9697vw), 215px)"}} href="mailto:Edgar@crawfordmodels.com?subject=Inquiry%20from%20Josiah's%20site">
                     Edgar@crawfordmodels.com
                 </a>
             </div>

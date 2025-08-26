@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({

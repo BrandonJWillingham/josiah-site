@@ -44,12 +44,12 @@ export default function Nav(){
                 <Link href="/fashion" className="hide-on-mobile" style={{alignSelf:"center",height:"fit-content",paddingRight:"clamp(20px, calc(-27.3px + 6.06vw), 60px)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
                     Fashion
                 </Link>
-                <a href="/bass" className="hide-on-mobile"style={{alignSelf:"center",height:"fit-content",paddingRight:"clamp(20px, calc(-27.3px + 6.06vw), 60px)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
+                <Link href="/bass" className="hide-on-mobile"style={{alignSelf:"center",height:"fit-content",paddingRight:"clamp(20px, calc(-27.3px + 6.06vw), 60px)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
                     Bass
-                </a>
-                <a href="/contact" className="hide-on-mobile"style={{alignSelf:"center",height:"fit-content",paddingRight:"clamp(20px, calc(-27.3px + 6.06vw), 60px)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
+                </Link>
+                <Link href="/contact" className="hide-on-mobile"style={{alignSelf:"center",height:"fit-content",paddingRight:"clamp(20px, calc(-27.3px + 6.06vw), 60px)",fontSize:"clamp(.1rem, .4rem + 1vw ,1.5rem)"}}>
                     Contact
-                </a>
+                </Link>
                 <div className="hide-on-mobile" style={{height:"fit-content",alignSelf:"center",display:"flex"}}>
                     <a className="hide-on-mobile" style={{paddingRight:" clamp(5px, calc(-60px + 8.333vw), 60px)"}}>
                         <SiInstagram style={{alignSelf:"center"}} size={20} className="text-neutral-900" />
