@@ -9,17 +9,17 @@ export default function fashionPage(){
         <div className="stagger">
             <div className="row">
             <ImageCard imgSrc={"/image1.jpg"} brand={"ONS"} alt={"campaign shot for ONS"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
-            <ImageCard imgSrc={"/MoonJuice.jpg"} brand={"Moon Juice"} al    t={"Campaign for Moon Juice"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,375px)"} />
-            <ImageCard imgSrc={"/DavidB.jpg"} brand={"David Beckham"} a lt={"Editorial Shot for David Beckham"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,375px)"} />
+            <ImageCard imgSrc={"/moonJuice.jpg"} brand={"Moon Juice"} al    t={"Campaign for Moon Juice"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,375px)"} />
+            <ImageCard imgSrc={"/davidB.jpg"} brand={"David Beckham"} a lt={"Editorial Shot for David Beckham"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,375px)"} />
             </div >
             <div className="row">
-            <ImageCard imgSrc={"/Uspa.JPG"} brand={"Us Polo Assn"} alt={" Valenties day campaign shot for US Polo Assn"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
+            <ImageCard imgSrc={"/uspa.jpg"} brand={"Us Polo Assn"} alt={" Valenties day campaign shot for US Polo Assn"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
             <ImageCard imgSrc={"/hollisterEccom.jpg"} brand={"Hollister"} alt={"Eccom work For hollister"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
             <ImageCard imgSrc={"/ReasonClothing.jpg"} brand={"Reason Clothing"} alt={"Eccom Campaign for Reason Clothing"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
             </div>
             <div className="row">
-            <ImageCard imgSrc={"/Orange.jpg"} brand={"Orange Culture"} alt={"Walking for Orange Culture at African Diaspora runway Show"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
-            <ImageCard imgSrc={"/Hanes.jpg"} brand={"Hanes"} alt={"Hanes summer catalogue"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
+            <ImageCard imgSrc={"/orange.jpg"} brand={"Orange Culture"} alt={"Walking for Orange Culture at African Diaspora runway Show"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
+            <ImageCard imgSrc={"/hanes.jpg"} brand={"Hanes"} alt={"Hanes summer catalogue"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
             <ImageCard imgSrc={"/sprayground.jpg"} brand={"Sprayground"} alt={"Sprayground Campaign "} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
             </div>  
         
@@ -28,22 +28,22 @@ export default function fashionPage(){
             <div className="no-scrollbar track" style={{ display:"flex",gap:"clamp(4px, 2.5vw, 24px)",marginBottom:"clamp(4px, 2.5vw, 24px)"}}>
                 <div className="content">
                     <ImageCard imgSrc={"/image1.jpg"} brand={"ONS"} alt={"campaign shot for ONS"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
-                    <ImageCard imgSrc={"/MoonJuice.jpg"} brand={"Moon Juice"} al    t={"Campaign for Moon Juice"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,375px)"} />
-                    <ImageCard imgSrc={"/DavidB.jpg"} brand={"David Beckham"} a lt={"Editorial Shot for David Beckham"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,375px)"} />
-                    <ImageCard imgSrc={"/Orange.jpg"} brand={"Orange Culture"} alt={"Walking for Orange Culture at African Diaspora runway Show"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
-                    <ImageCard imgSrc={"/Hanes.jpg"} brand={"Hanes"} alt={"Hanes summer catalogue"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
-                    <ImageCard imgSrc={"/TrippleFat.jpg"} brand={"Tripple F.A.T Goose"} alt={"Eccom Campaign for Tripple Fat Goose"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />            
-                    <ImageCard imgSrc={"/Mugzy.jpg"} brand={"Mugzy McFly"} alt={"Holiday social media campaign with Mugzy McFly"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />            
+                    <ImageCard imgSrc={"/moonJuice.jpg"} brand={"Moon Juice"} al    t={"Campaign for Moon Juice"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,375px)"} />
+                    <ImageCard imgSrc={"/davidB.jpg"} brand={"David Beckham"} a lt={"Editorial Shot for David Beckham"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,375px)"} />
+                    <ImageCard imgSrc={"/orange.jpg"} brand={"Orange Culture"} alt={"Walking for Orange Culture at African Diaspora runway Show"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
+                    <ImageCard imgSrc={"/hanes.jpg"} brand={"Hanes"} alt={"Hanes summer catalogue"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
+                    <ImageCard imgSrc={"/trippleFat.jpg"} brand={"Tripple F.A.T Goose"} alt={"Eccom Campaign for Tripple Fat Goose"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />            
+                    <ImageCard imgSrc={"/mugzy.jpg"} brand={"Mugzy McFly"} alt={"Holiday social media campaign with Mugzy McFly"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />            
                 </div>
            </div>
            <div className="trackRvs">
                 <div  className="no-scrollbar content" style={{display:"flex", gap:"clamp(4px, 2.5vw, 24px)"}}>
                 <ImageCard imgSrc={"/sprayground.jpg"} brand={"Sprayground"} alt={"Sprayground Campaign "} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} /> 
-                <ImageCard imgSrc={"/Uspa.JPG"} brand={"Us Polo Assn"} alt={" Valenties day campaign shot for US Polo Assn"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
+                <ImageCard imgSrc={"/uspa.jpg"} brand={"Us Polo Assn"} alt={" Valenties day campaign shot for US Polo Assn"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
                 <ImageCard imgSrc={"/hollisterEccom.jpg"} brand={"Hollister"} alt={"Eccom work For hollister"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
-                <ImageCard imgSrc={"/ReasonClothing.jpg"} brand={"Reason Clothing"} alt={"Eccom Campaign for Reason Clothing"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
+                <ImageCard imgSrc={"/reasonClothing.jpg"} brand={"Reason Clothing"} alt={"Eccom Campaign for Reason Clothing"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
                 <ImageCard imgSrc={"/indi.jpg"} brand={"indi + Ashe"} alt={"Eccom Campaign for Indi + Ashe"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />            
-                <ImageCard imgSrc={"/SurfSide.jpg"} brand={"Surf side supply"} alt={"Social Media Campagin for Surfside Supply"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />            
+                <ImageCard imgSrc={"/surfSide.jpg"} brand={"Surf side supply"} alt={"Social Media Campagin for Surfside Supply"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />            
                 <ImageCard imgSrc={"/tailory.jpg"} brand={"Tailory"} alt={"Runway for dog pound ft tailory"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />            
                 </div>
            </div>

@@ -1,8 +1,13 @@
 :root {
   --background: #F2F0EF;
-  --foreground: #171717;
+  --foreground: #F2F0EF;
 }
-
+@media (prefers-color-scheme: dark) {
+:root {
+  --background: #F2F0EF;
+  --foreground: #F2F0EF;
+}
+}
 /* globals.css */
 body { font-family: var(--font-manrope), system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
 h1,h2,.display {
@@ -60,11 +65,7 @@ a {
 }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+
 
 .stagger {
   --indent: clamp(16px, 4vw, 72px); /* how far even rows shift right */
