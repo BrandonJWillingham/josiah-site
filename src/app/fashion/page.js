@@ -15,7 +15,7 @@ export default function fashionPage(){
             <div className="row">
             <ImageCard imgSrc={"/uspa.jpg"} brand={"Us Polo Assn"} alt={" Valenties day campaign shot for US Polo Assn"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
             <ImageCard imgSrc={"/hollisterEccom.jpg"} brand={"Hollister"} alt={"Eccom work For hollister"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
-            <ImageCard imgSrc={"/ReasonClothing.jpg"} brand={"Reason Clothing"} alt={"Eccom Campaign for Reason Clothing"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
+            <ImageCard imgSrc={"/reasonClothing.jpg"} brand={"Reason Clothing"} alt={"Eccom Campaign for Reason Clothing"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
             </div>
             <div className="row">
             <ImageCard imgSrc={"/orange.jpg"} brand={"Orange Culture"} alt={"Walking for Orange Culture at African Diaspora runway Show"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.2273),300px)"} height={"clamp(100px,125px + 15vw,350px)"} />
