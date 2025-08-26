@@ -174,13 +174,13 @@ export default function fashionPage(){
         <div className="hide" style={{marginTop:"20px"}}>
             <div style={{display:"flex",justifyContent:"space-around", padding:"30px"}}>
                 <h3>
-                    Height: 6&rsquo; 3&ldquo in - 191 cm
+                    Height: 6&rsquo; 3&ldquo; in - 191 cm
                 </h3>
                 <h3>
-                    Chest: 34&ldquo in - 86 cm
+                    Chest: 34&ldquo; in - 86 cm
                 </h3>
                 <h3>
-                    Waist: 33&ldquo in - 84 cm
+                    Waist: 33&ldquo; in - 84 cm
                 </h3>
             </div>
 
@@ -189,22 +189,22 @@ export default function fashionPage(){
                     Shoes: 11.5 US - 45 EU
                 </h3>
                 <h3>
-                    Inseam: 34&ldquo 1/2 in - 87 cm
+                    Inseam: 34&ldquo; 1/2 in - 87 cm
                 </h3>
             </div>
         </div>
           <div className="mobile-flex" style={{ justifyContent:"center",flexDirection:"column",width:"100%",alignContent:"center",marginTop:"20px"}}>
                 <h3 style={{width:"fit-content", alignSelf:"center",marginBottom:"10px"}}>
-                    Height: 6&rsquo; 3&ldquo in - 191 cm
+                    Height: 6&rsquo; 3&ldquo; in - 191 cm
                 </h3>
                 <h3 style={{width:"fit-content", alignSelf:"center",marginBottom:"10px"}}>
-                    Chest: 34&ldquo in - 86 cm
+                    Chest: 34&ldquo; in - 86 cm
                 </h3>
                 <h3 style={{width:"fit-content", alignSelf:"center",marginBottom:"10px"}}>
-                    Waist: 33&ldquo in - 84 cm
+                    Waist: 33&ldquo; in - 84 cm
                 </h3>
                 <h3 style={{width:"fit-content", alignSelf:"center",marginBottom:"10px"}}>
-                    Inseam: 34&ldquo 1/2 in - 87 cm
+                    Inseam: 34&ldquo; 1/2 in - 87 cm
                 </h3>
                 <h3 style={{width:"fit-content", alignSelf:"center",marginBottom:"10px"}}>
                     Shoes: 11.5 US - 45 EU
