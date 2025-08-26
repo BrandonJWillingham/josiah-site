@@ -1,6 +1,30 @@
 :root {
-  --background: #ffffff;
+  --background: #F2F0EF;
   --foreground: #171717;
+}
+
+/* globals.css */
+body { font-family: var(--font-manrope), system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+h1,h2,.display {
+  font-family: var(--font-head);
+  letter-spacing: .02em;                 /* tiny tracking for elegance */
+  line-height: 1.05;                      /* tight display look */
+  /* If you use a variable font with optical size: */
+  font-variation-settings: 'opsz' 72;     /* larger optical size for big headings */
+}
+.masonry {
+  columns: 3;              /* desktop: 3 columns */
+  column-gap: 24px;        /* space between columns */
+}
+
+@media (max-width: 1024px) { .masonry { columns: 2; } }
+@media (max-width: 640px)  { .masonry { columns: 1; } }
+
+/* each card */
+.masonry > * {
+  break-inside: avoid;     /* don't split a card between columns */
+  margin: 0 0 24px;        /* vertical spacing between cards */
+  width: 100%;             /* card fills column width */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,9 +58,276 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+.stagger {
+  --indent: clamp(16px, 4vw, 72px); /* how far even rows shift right */
+  --gap: clamp(4px, 2.5vw, 24px);
+  /* max-width:1600; */
+  margin: 0 auto;
+  }
+
+  .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  width: 100%;
+  margin-bottom: var(--gap);
+  }
+
+  .track{
+    will-change: transform;
+    animation: scroll-ltr 30s linear infinite;
+  }
+  .brand-track{
+    will-change: transform;
+    animation: scroll-ltr-brand 20s linear infinite;
+  }
+  .trackRvs{
+    will-change: transform;
+    animation: scroll-ltr-reverse 30s linear infinite;
+  }
+  .content {
+  display: inline-flex;    /* items in a row */
+  gap: var(--gap);
+}
+.marquee {
+--gap: 24px;             /* space between items */
+--speed: 40s;            /* increase for slower, decrease for faster */
+overflow: hidden;
+width: 100%;
+/* optional edge fade */
+-webkit-mask-image: linear-gradient(to right, transparent, #000 2%, #000 98%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 2%, #000 98%, transparent);
+}
+@keyframes scroll-ltr {
+from { transform: translateX(0%); }
+to   { transform: translateX(-120%); }
+}
+@keyframes scroll-ltr-reverse {
+  from { transform: translateX(-120%); }
+  to   { transform: translateX(0%); }
+}
+@keyframes scroll-ltr-brand {
+  from{ transform: translateX(0%);}
+  to {transform: translateX(-400%);}
+}
+
+  /* indent every other row, but keep right edge aligned */
+.row:nth-child(even) {
+margin-left: var(--indent);
+width: calc(100% - var(--indent));
+}
+.brandList{
+  display: flex;
+}
+.mobile{ display: none;}
+
+
+:root  { --bar-h: clamp(52px, 7vh, 64px); }
+
+
+.tab {
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  line-height: 1;
+}
+.tab:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+
+
+  /* Hamburger */
+.menuBtn {
+  display: none; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 999px;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.burger, .burger::before, .burger::after {
+  content: ""; display: block; width: 18px; height: 2px; background: #111;
+  transition: transform 300ms ease, opacity 300ms ease;
+  border: none;
+}
+.burger { position: relative; }
+.burger::before { position: absolute; top: -6px; left: 0; }
+.burger::after  { position: absolute; top:  6px; left: 0; }
+.burger[data-open="true"] { transform: rotate(45deg); }
+.burger[data-open="true"]::before { transform: rotate(90deg) translateX(0); top: 0; }
+.burger[data-open="true"]::after  { opacity: 0; transform: translateY(-6px); }
+/* Respect reduced motion */
+
+
+.mobileNav {
+  position: absolute;
+  top:70px;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 50; pointer-events: none;
+  transform-origin: top;
+  transform: scaleY(0.95);
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  background: #F2F0EF; color: #0c0c0c;
+  transition: opacity 220ms ease, transform 220ms ease, max-height 0ms linear 220ms;
+}
+.mobileNav[data-open="true"] {
+  pointer-events: auto;
+  opacity: 1;
+  transform: scaleY(1);
+  max-height: 100vh;
+  transition: opacity 220ms ease, transform 220ms ease;
+}
+.tab{
+  width: fit-content;
+  align-self: center;
+}
+
+.bassBio{
+  width:clamp(250px, calc(-64.364px + 40.303vw), 516px);
+  font-size:clamp(.1rem, .4rem + 1vw ,1.5rem);
+  height:fit-content;
+  align-self:center;
+  margin-left:clamp(1rem,1rem + 10vw,20rem);
+}
+.bassBioContainer{
+  flex-direction: row;
+  justify-content: center;
+}
+.mobile-flex{display: none;}
+.reelsCont {
+  --gap: clamp(12px, 2vw, 24px);
+  display: flex;
+  gap: 14vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;      /* enable snapping */
+  -webkit-overflow-scrolling: touch;
+  align-items: center;                 /* vertically center the videos */
+  padding-block: var(--gap);
+  /* create “gutters” so first & last can center */
+  position: relative;
+}
+.reelsCont::before,
+.reelsCont::after {
+  content: "";
+  flex: 0 0 50%;                       /* half viewport on each side */
+}
+.reel {
+  flex: 0 0 auto;                      /* don’t shrink */
+  width: clamp(220px, 28vw, 420px);    /* tune to taste */
+  aspect-ratio: 9 / 16;
+  height: auto;
+  border-radius: 12px;
+  scroll-snap-align: center;           /* center on snap */
+  scroll-snap-stop: always;            /* stronger snap */
+  object-fit: cover;                   /* if you ever use poster/thumbs */
+}
+
+a:not(:has(svg))  {
+  /* pick your base + gold/orange tones */
+  --base: black;              /* normal text color */
+  --gold1: #f59e0b;                  /* amber-500 */
+  --gold2: #f97316;                  /* orange-500 */
+
+  text-decoration: none;
+  background-image:
+    linear-gradient(90deg,
+      var(--base) 0 50%,
+      var(--gold1) 50% 75%,
+      var(--gold2) 75% 100%
+    );
+  background-size: 200% 100%;        /* 2x width so we can slide it */
+  background-position: 0% 0%;        /* show the left half (base color) */
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;                 /* show the background through the text */
+  transition: background-position 400ms ease;  /* animate the slide */
+}
+
+a:hover,
+a:focus-visible {
+  background-position: 100% 0%;      /* slide to right half (gold/orange) */
+}
+
+/* optional: underline only on hover/focus */
+a:hover,
+a:focus-visible { text-decoration: underline; }
+a:has(svg) { background: none; color: inherit; }
+a:has(svg) svg { transition: color 250ms ease; }
+a:has(svg):hover svg,
+a:has(svg):focus-visible svg { color: #f59e0b; } /* gold tint */
+
+/* accessibility: reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+  a { transition: none; }
+}
+.icon-wipe {
+  position: relative;
+  display: inline-grid;         /* easy stacking via grid area */
+  place-items: center;
+}
+
+/* both icons stacked on the same grid cell */
+.icon-wipe .icon { grid-area: 1 / 1; }
+
+/* base color (your neutral) */
+.icon-wipe .base { color: #0a0a0a; } /* or use current Tailwind color */
+
+/* gold overlay starts hidden by clipping its right side to 100% */
+.icon-wipe .gold {
+  color: #f59e0b;               /* amber/gold; or #f97316 for more orange */
+  clip-path: inset(0 100% 0 0); /* top right bottom left */
+  transition: clip-path 400ms ease;
+}
+
+/* reveal from left → right on hover/focus */
+.icon-wipe:hover .gold,
+.icon-wipe:focus-visible .gold {
+  clip-path: inset(0 0 0 0);
+}
+/* Mobile rules */
+@media (max-width: 768px) {
+  .stagger{display: none;}
+  .hide{display: none;}
+  .mobile{display: block;}
+  .mobile-flex{display: flex;}
+  .bassBio{
+    width: 90%;
+    margin-left: 0;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  .bassBioContainer{
+    flex-direction: column;
+  }
+  .bassBioImg{
+    align-self:center;
+  }
+  .mobileCenter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .hide-on-mobile { display: none; }
+  .menuBtn{display: flex;}
+}
+@media (prefers-reduced-motion: reduce) {
+  .burger, .burger::before, .burger::after,
+  .mobileNav, .list a { transition: none !important; }
 }

@@ -1,95 +1,47 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Nav, { ImageCard,bottomNav } from "./components.js/utils";
+
+
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+  return (
+    <>
+      {/* <Nav/> */}
+
+      <div  className="no-scrollbar" style={{flexWrap: "nowrap",overflowX: "auto",overflowY:"hidden", width:"100%",gap: "30px", display:"flex", flexWrap: "nowrap", WebkitOverflowScrolling: "touch"}} >
+        <ImageCard imgSrc={"/image1.jpg"} brand={"ONS"} alt={"campaign shot for ONS"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.30),400px)"} height={"clamp(400px,calc(400px + (100vw - 780px) * 0.17),513px)"} />
+        <ImageCard imgSrc={"/MoonJuice.jpg"} brand={"Moon Juice"} alt={"Campaign for Moon Juice"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.30),400px)"}  height={"clamp(400px,calc(400px + (100vw - 780px) * 0.17),513px)"} />
+        <ImageCard imgSrc={"/hollisterEccom.jpg"} brand={"Hollister"} alt={"Eccom work For hollister"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.30),400px)"}  height={"clamp(400px,calc(400px + (100vw - 780px) * 0.17),513px)"}  />
+        <ImageCard imgSrc={"/Uspa.jpg"} brand={"Us Polo Assn"} alt={" Valenties day campaign shot for US Polo Assn"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.30),400px)"}  height={"clamp(400px,calc(400px + (100vw - 780px) * 0.17),513px)"}  />
+        <ImageCard imgSrc={"/DavidB.jpg"} brand={"David Beckham"} a lt={"Editorial Shot for David Beckham"} width={"clamp(200px,calc(200px + (100vw - 780px) * 0.30),400px)"}  height={"clamp(400px,calc(400px + (100vw - 780px) * 0.17),513px)"}  />
+        <ImageCard imgSrc={"/ReasonClothing.jpg"} brand={"Reason Clothing"} alt={"Eccom Campaign for Reason Clothing"}width={"clamp(200px,calc(200px + (100vw - 780px) * 0.30),400px)"}  height={"clamp(400px,calc(400px + (100vw - 780px) * 0.17),513px)"}  />
+      </div>
+      <div style={{display:"flex",justifyContent:"center",margin:"clamp(0px,0px + 13.8vw , 200px" }}>
+          <a href="https://www.crawfordmodels.com/w/ny/models/menl/2785-josiah_willingham">
+            <h2 style={{fontSize:"clamp(1rem, .4rem + 2vw ,5rem)"}} >
+              Book
+            </h2>
+          </a>  
+      </div>
+        
+
+
+      <div style={{display:"flex",justifyContent:"center"}}>
+        <video
+          src="SageandCrowe.mp4"
+          controls
+          preload="metadata"
+          style={{ width:"clamp(300px, 125px + 50vw, 800px)",alignSelf:"center", height: "auto", borderRadius: 12 }}
+        />
+      </div>
+
+      <div style={{display:"flex",justifyContent:"center"}}>
+        <p style={{width:"clamp(400px, 400px + 27.8vw, 860px)",padding:"40px",fontSize:"clamp(1rem, .4rem + 1vw ,3rem)"}}>
+          Church-trained from age 8. Focus in R&B, Soul, and gospel—locked pocket with a warm tone.<br/> Get the full story on my <a href="/bass">music page</a>
+        </p>
+      </div>
+    </>
+  );  
 }
