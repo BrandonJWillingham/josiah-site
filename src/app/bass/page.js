@@ -20,8 +20,8 @@ export default function bassPage (){
                 <video
                 src="SageandCrowe.mp4"
                 controls
-                playsInline     // REQUIRED on iOS to avoid full-screen
-                muted  
+                poster="/posters/SageandCrow.blur.jpg"
+                playsInline     // REQUIRED on iOS to avoid full-screen  
                 preload="metadata"
                 style={{ width:"clamp(270px, calc(-50px + 95vw ), 950px)",alignSelf:"center", height: "auto" , borderRadius: 12 }}
                 />
@@ -31,8 +31,8 @@ export default function bassPage (){
                  <video
                 src="Dajah.mp4"
                 controls
+                poster="/posters/Dajah.blur.jpg"
                 playsInline     // REQUIRED on iOS to avoid full-screen
-                muted 
                 preload="metadata"
                 style={{ width:"clamp(270px, calc(-50px + 95vw ), 950px)",alignSelf:"center", height: "auto" , borderRadius: 12 }}
                 />
@@ -47,22 +47,23 @@ export default function bassPage (){
                 className="reel"
                 src="SaxLick.mp4"
                 controls
-                playsInline     // REQUIRED on iOS to avoid full-screen
-                muted 
+                poster="/posters/SaxLick.blur.jpg"
+                playsInline     // REQUIRED on iOS to avoid full-screen 
                 preload="metadata"
             />
             <video
                 className="reel"
                 src="WinnersCircle.mp4"
                 controls
+                poster="/posters/SaxLick.blur.jpg"
                 playsInline     // REQUIRED on iOS to avoid full-screen
-                muted 
                 preload="metadata"
             />
             <video
                 className="reel"
                 src="wonderfulWorld.mp4"
                 controls
+                poster="/posters/wonderfulWorld.blur.jpg"
                 playsInline     // REQUIRED on iOS to avoid full-screen
                 muted 
                 preload="metadata"
@@ -71,6 +72,7 @@ export default function bassPage (){
                 className="reel"
                 src="overflow.mp4"
                 controls
+                poster="/posters/overflow.blur.jpg"
                 playsInline     // REQUIRED on iOS to avoid full-screen
                 muted 
                 preload="metadata"
@@ -79,6 +81,7 @@ export default function bassPage (){
                 className="reel"
                 src="throughTheWire.mp4"
                 controls
+                poster="/posters/throughTheWire.blur.jpg"
                 playsInline     // REQUIRED on iOS to avoid full-screen
                 muted 
                 preload="metadata"
