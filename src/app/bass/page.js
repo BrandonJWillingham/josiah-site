@@ -20,7 +20,7 @@ export default function bassPage (){
                 <video
                 src="SageandCrowe.mp4"
                 controls
-                poster="/posters/SageandCrow.blur.jpg"
+                poster="/posters/SageandCrowe.blur.jpg"
                 playsInline     // REQUIRED on iOS to avoid full-screen  
                 preload="metadata"
                 style={{ width:"clamp(270px, calc(-50px + 95vw ), 950px)",alignSelf:"center", height: "auto" , borderRadius: 12 }}

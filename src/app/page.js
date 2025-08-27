@@ -29,6 +29,8 @@ export default function Home() {
         <video
           src="SageandCrowe.mp4"
           controls
+          poster="/posters/SageandCrowe.blur.jpg"
+          playsInline
           preload="metadata"
           style={{ width:"clamp(300px, 125px + 50vw, 800px)",alignSelf:"center", height: "auto", borderRadius: 12 }}
         />
